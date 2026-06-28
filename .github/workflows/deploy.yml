@@ -1,0 +1,83 @@
+name: Deploy to InfinityFree (FTP)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, bcmath, gd, pdo_mysql, zip, intl, exif, fileinfo
+          tools: composer:v2
+          coverage: none
+
+      - name: Install Composer dependencies
+        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
+
+      - name: Create .env file
+        run: |
+          cat > .env <<'EOF'
+          APP_NAME="Shop Keeper"
+          APP_TITLE="Shop Keeper"
+          APP_ENV=production
+          APP_KEY=${{ secrets.APP_KEY }}
+          APP_DEBUG=false
+          APP_LOG_LEVEL=error
+          APP_URL=${{ secrets.APP_URL }}
+          APP_LOCALE=en
+          APP_TIMEZONE="Asia/Kolkata"
+
+          LOG_CHANNEL=daily
+
+          DB_CONNECTION=mysql
+          DB_HOST=${{ secrets.DB_HOST }}
+          DB_PORT=${{ secrets.DB_PORT }}
+          DB_DATABASE=${{ secrets.DB_DATABASE }}
+          DB_USERNAME=${{ secrets.DB_USERNAME }}
+          DB_PASSWORD=${{ secrets.DB_PASSWORD }}
+
+          BROADCAST_DRIVER=log
+          CACHE_DRIVER=file
+          SESSION_DRIVER=file
+          QUEUE_CONNECTION=sync
+          EOF
+
+      - name: Cache framework config & routes
+        run: |
+          php artisan config:clear || true
+          php artisan route:clear || true
+          php artisan view:clear || true
+
+      - name: Deploy to InfinityFree via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          protocol: ftp
+          server-dir: htdocs/
+          local-dir: ./
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git/**
+            **/.github/**
+            **/node_modules/**
+            **/tests/**
+            **/.gitignore
+            **/.gitattributes
+            **/README.md
+            **/readme.md
+            **/phpunit.xml
+            **/.env.example
