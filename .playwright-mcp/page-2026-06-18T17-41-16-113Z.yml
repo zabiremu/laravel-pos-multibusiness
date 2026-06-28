@@ -1,0 +1,26 @@
+- generic [ref=e4]:
+  - img "lock" [ref=e7]
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - heading "Welcome Back" [level=1] [ref=e15]
+      - heading "Login to your Shop Keeper" [level=2] [ref=e16]
+    - generic [ref=e17]:
+      - generic [ref=e19]:
+        - generic [ref=e21]: Username
+        - textbox "Username These credentials do not match our records." [active] [ref=e22]:
+          - /placeholder: Username
+          - text: admin
+        - strong [ref=e24]: These credentials do not match our records.
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: Password
+          - link "Forgot Your Password?" [ref=e29] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/password/reset
+        - textbox "Password Forgot Your Password?" [ref=e30]:
+          - /placeholder: Password
+        - button [ref=e31] [cursor=pointer]:
+          - img [ref=e32]
+      - generic [ref=e37]:
+        - checkbox "Remember Me" [ref=e38] [cursor=pointer]
+        - generic [ref=e39]: Remember Me
+      - button "Login" [ref=e40] [cursor=pointer]

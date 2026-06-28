@@ -1,0 +1,279 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - link "Elite Design Online" [ref=e4] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/home
+      - paragraph [ref=e5]:
+        - text: Elite Design
+        - generic "Online" [ref=e6]
+    - generic [ref=e7]:
+      - link "Home" [ref=e8] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/home
+        - img [ref=e9]
+        - generic [ref=e14]: Home
+      - link "User Management" [ref=e16] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e17]
+        - generic [ref=e24]: User Management
+        - img [ref=e25]
+      - link "Contacts" [ref=e29] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e30]
+        - generic [ref=e35]: Contacts
+        - img [ref=e36]
+      - link "Products" [ref=e40] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e41]
+        - generic [ref=e48]: Products
+        - img [ref=e49]
+      - link " Manufacturing" [ref=e52] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/manufacturing/recipe
+        - generic [ref=e53]: 
+        - generic [ref=e54]: Manufacturing
+      - link " Accounting" [ref=e55] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/accounting/dashboard
+        - generic [ref=e56]: 
+        - generic [ref=e57]: Accounting
+      - link " Repair" [ref=e58] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/repair/dashboard
+        - generic [ref=e59]: 
+        - generic [ref=e60]: Repair
+      - link "Purchases" [ref=e62] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e63]
+        - generic [ref=e68]: Purchases
+        - img [ref=e69]
+      - link "Sell" [ref=e73] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e74]
+        - generic [ref=e79]: Sell
+        - img [ref=e80]
+      - link "Stock Transfers" [ref=e84] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e85]
+        - generic [ref=e91]: Stock Transfers
+        - img [ref=e92]
+      - link "Stock Adjustment" [ref=e96] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e97]
+        - generic [ref=e103]: Stock Adjustment
+        - img [ref=e104]
+      - link "Expenses" [ref=e108] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e109]
+        - generic [ref=e114]: Expenses
+        - img [ref=e115]
+      - link "Payment Accounts" [ref=e119] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e120]
+        - generic [ref=e124]: Payment Accounts
+        - img [ref=e125]
+      - link " AI Assistance" [ref=e128] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/aiassistance/dashboard
+        - generic [ref=e129]: 
+        - generic [ref=e130]: AI Assistance
+      - link " HMS" [ref=e131] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/hms/dashboard
+        - generic [ref=e132]: 
+        - generic [ref=e133]: HMS
+      - link "Reports" [ref=e135] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e136]
+        - generic [ref=e144]: Reports
+        - img [ref=e145]
+      - link "Notification Templates" [ref=e148] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/notification-templates
+        - img [ref=e149]
+        - generic [ref=e154]: Notification Templates
+      - link "Settings" [ref=e156] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e157]
+        - generic [ref=e162]: Settings
+        - img [ref=e163]
+      - link " CRM" [ref=e166] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/crm/dashboard
+        - generic [ref=e167]: 
+        - generic [ref=e168]: CRM
+      - link " Project" [ref=e169] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/project/project?project_view=list_view
+        - generic [ref=e170]: 
+        - generic [ref=e171]: Project
+      - link " Asset Management" [ref=e172] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/asset/dashboard
+        - generic [ref=e173]: 
+        - generic [ref=e174]: Asset Management
+      - link " HRM" [ref=e175] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/hrm/dashboard
+        - generic [ref=e176]: 
+        - generic [ref=e177]: HRM
+      - link " Essentials" [ref=e178] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/essentials/todo
+        - generic [ref=e179]: 
+        - generic [ref=e180]: Essentials
+      - link " Woocommerce" [ref=e181] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/woocommerce
+        - generic [ref=e182]: 
+        - generic [ref=e183]: Woocommerce
+      - generic [ref=e184]:
+        - link " Connector" [ref=e185] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e186]: 
+          - generic [ref=e187]: Connector
+          - img [ref=e188]
+        - text: 
+      - link " Spreadsheet" [ref=e191] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/spreadsheet/sheets
+        - generic [ref=e192]: 
+        - generic [ref=e193]: Spreadsheet
+      - link " Catalogue QR" [ref=e194] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/product-catalogue/catalogue-qr
+        - generic [ref=e195]: 
+        - generic [ref=e196]: Catalogue QR
+  - main [ref=e197]:
+    - generic [ref=e200]:
+      - button "Collapse Sidebar" [ref=e202] [cursor=pointer]:
+        - generic [ref=e203]: Collapse Sidebar
+        - img [ref=e204]
+      - generic [ref=e208]:
+        - button "" [ref=e209] [cursor=pointer]:
+          - generic [ref=e210]: 
+        - text: 
+        - group [ref=e211]:
+          - img [ref=e213] [cursor=pointer]
+        - button [ref=e216] [cursor=pointer]:
+          - generic [ref=e217]: Calculator
+          - img [ref=e218]
+        - link "POS" [ref=e222] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/pos/create
+          - img [ref=e223]
+          - text: POS
+        - link " Repair" [ref=e229] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/pos/create?sub_type=repair
+          - generic [ref=e230]: 
+          - strong [ref=e231]: Repair
+        - button "Today's Profit" [ref=e232] [cursor=pointer]:
+          - generic [ref=e233]: Today's Profit
+          - img [ref=e234]
+        - button "06/19/2026" [ref=e238] [cursor=pointer]
+        - listitem [ref=e239]:
+          - generic [ref=e240]:
+            - generic [ref=e241]: Notifications
+            - img [ref=e242]
+        - group [ref=e246]:
+          - generic "MD Abu Sayed" [ref=e247] [cursor=pointer]:
+            - generic [ref=e248]: MD Abu Sayed
+            - img [ref=e249]
+    - generic [ref=e254]:
+      - navigation [ref=e256]:
+        - generic [ref=e257]:
+          - link " Accounting" [ref=e259] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/accounting/dashboard
+            - generic [ref=e260]: 
+            - text: Accounting
+          - list [ref=e262]:
+            - listitem [ref=e263]:
+              - link "Charts of Accounts" [ref=e264] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/accounting/chart_of_account
+            - listitem [ref=e265]:
+              - link "Journal Entries" [ref=e266] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/accounting/journal_entry
+            - listitem [ref=e267]:
+              - link "Transfers" [ref=e268] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/accounting/transfers
+            - listitem [ref=e269]:
+              - link "Transactions" [ref=e270] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/accounting/transactions/sales?type=payment
+            - listitem [ref=e271]:
+              - link "Reconcile" [ref=e272] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/accounting/reconcile
+            - listitem [ref=e273]:
+              - link "Budgeting" [ref=e274] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/accounting/budget?view=monthly&year=2026
+            - listitem [ref=e275]:
+              - link "Reports" [ref=e276] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/report/accounting
+            - listitem [ref=e277]:
+              - link "Settings" [ref=e278] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/accounting/settings/account_subtypes
+      - heading "Accounting Dashboard" [level=1] [ref=e280]:
+        - text: Accounting
+        - generic [ref=e281]: Dashboard
+      - generic [ref=e282]:
+        - generic [ref=e283]:
+          - generic [ref=e285]:
+            - generic [ref=e286]:
+              - heading "" [level=4] [ref=e287]:
+                - strong [ref=e288]:
+                  - generic [ref=e290]: 
+              - paragraph [ref=e291]: Charts of accounts
+            - generic [ref=e293]: 
+            - link "More information " [ref=e294] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/accounting/chart_of_account
+              - text: More information
+              - generic [ref=e295]: 
+          - generic [ref=e297]:
+            - generic [ref=e298]:
+              - heading "" [level=4] [ref=e299]:
+                - strong [ref=e300]:
+                  - generic [ref=e302]: 
+              - paragraph [ref=e303]: Journal Entries
+            - generic [ref=e305]: 
+            - link "More information " [ref=e306] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/accounting/journal_entry
+              - text: More information
+              - generic [ref=e307]: 
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - heading "" [level=4] [ref=e311]:
+                - strong [ref=e312]:
+                  - generic [ref=e314]: 
+              - paragraph [ref=e315]: All Transactions
+            - generic [ref=e317]: 
+            - link "More information " [ref=e318] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/accounting/transactions/loan
+              - text: More information
+              - generic [ref=e319]: 
+        - generic [ref=e323]:
+          - heading "Balance By Account Type" [level=3] [ref=e325]
+          - table [ref=e328]:
+            - rowgroup [ref=e329]:
+              - row "Account Type Current Balance" [ref=e330]:
+                - columnheader "Account Type" [ref=e331]
+                - columnheader "Current Balance" [ref=e332]
+            - rowgroup [ref=e333]:
+              - row "Asset BDT 0" [ref=e334]:
+                - cell "Asset" [ref=e335]
+                - cell "BDT 0" [ref=e336]
+              - row "Expense BDT 0" [ref=e337]:
+                - cell "Expense" [ref=e338]
+                - cell "BDT 0" [ref=e339]
+              - row "Income BDT 0" [ref=e340]:
+                - cell "Income" [ref=e341]
+                - cell "BDT 0" [ref=e342]
+              - row "Equity BDT 0" [ref=e343]:
+                - cell "Equity" [ref=e344]
+                - cell "BDT 0" [ref=e345]
+              - row "Liability BDT 0" [ref=e346]:
+                - cell "Liability" [ref=e347]
+                - cell "BDT 0" [ref=e348]
+        - img [ref=e357]:
+          - generic [ref=e363]: Values
+          - generic "Chart context menu" [ref=e365]
+          - generic [ref=e368]: Expense Report
+          - generic [ref=e374] [cursor=pointer]: Total Expense
+          - generic [ref=e377]: Tea Bill
+          - generic [ref=e379]: "0"
+        - generic [ref=e380]:
+          - img [ref=e386]:
+            - generic [ref=e392]: Values
+            - generic "Chart context menu" [ref=e394]
+            - generic [ref=e397]: Current Financial Year
+            - generic [ref=e403] [cursor=pointer]: Current Financial Year
+            - generic [ref=e406]: "0"
+          - img [ref=e412]:
+            - generic [ref=e418]: Values
+            - generic "Chart context menu" [ref=e420]
+            - generic [ref=e423]: Last 30 Days
+            - generic [ref=e429] [cursor=pointer]: Last 30 Days
+            - generic [ref=e432]: "0"
+      - paragraph [ref=e435]: Shop Keeper - V6.4 | Copyright © 2026 All rights reserved.
+    - text: 
