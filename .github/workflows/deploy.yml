@@ -33,7 +33,7 @@ jobs:
           mkdir -p bootstrap/cache
 
       - name: Install Composer dependencies
-        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
+        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist --no-scripts
 
       - name: Create .env file
         run: |
@@ -62,12 +62,6 @@ jobs:
           SESSION_DRIVER=file
           QUEUE_CONNECTION=sync
           EOF
-
-      - name: Cache framework config & routes
-        run: |
-          php artisan config:clear || true
-          php artisan route:clear || true
-          php artisan view:clear || true
 
       - name: Deploy to InfinityFree via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
